@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_root_layout">
+
+
+    <FrameLayout
+        android:id="@+id/id_paly_back0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_paly_back1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_paly_back2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_paly_back3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_paly_back4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</FrameLayout>

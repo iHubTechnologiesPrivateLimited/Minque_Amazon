@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="Set me up!"
+        android:textColor="@color/white"
+        android:textSize="70dp" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/spalsh_str"
+        android:textColor="@color/white"
+        android:textSize="32dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_wifi"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/img_wifi"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/wifiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WifiName..."
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/uuidcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:textSize="50dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

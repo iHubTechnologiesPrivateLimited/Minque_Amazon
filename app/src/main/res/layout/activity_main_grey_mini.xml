@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bind="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray2"
+        android:orientation="horizontal"
+        android:paddingBottom="25dp">
+
+        <RelativeLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/doctormale_svg" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/imageView"
+                android:layout_alignBottom="@+id/imageView"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_rectanguler"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:text="Offline"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/rounded_corner_rectanguler_gray3"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="Pediatrication"
+                    android:textColor="@color/font_gray1"
+                    android:id="@+id/id_spec1"
+                    android:visibility="gone"
+                  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/rounded_corner_rectanguler_gray3"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="Pediatrication"
+                    android:textColor="@color/font_gray1"
+                    android:id="@+id/id_spec2"
+                    android:visibility="gone"
+
+                 />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/rounded_corner_rectanguler_gray3"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="Pediatrication"
+                    android:textColor="@color/font_gray1"
+                    android:id="@+id/id_spec3"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/id_tv_qul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="MBBS, MD bvd"
+                android:textColor="@color/font_gray2"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_tv_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_corner_rectanguler_gray3"
+                    android:drawableLeft="@drawable/ic_room"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Room No - 08"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                  android:layout_marginRight="25dp"
+                    android:visibility="gone"
+                   />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05:00pm - 08:00pm"
+                        android:textColor="@color/font_gray1"
+                        android:textSize="14dp"
+                      />
+
+                    <TextView
+                        android:id="@+id/id_tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="My Sample Hospital, Kondapur"
+                        android:textColor="@color/font_gray1"
+                        android:textSize="14dp"
+                       />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv_upnext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up Next"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_up_next"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner_rectanguler_gray1"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/waitinglist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting List"
+                android:textColor="@color/font_gray3"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+              android:layout_marginRight="50dp"
+                android:background="@drawable/rounded_corner_rectanguler_gray2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/waiting_patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Patient"
+                        android:textColor="@color/font_gray2"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/waiting_contact_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="155dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Contact"
+                        android:textColor="@color/font_gray2"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/waiting_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Appt Time"
+                        android:textColor="@color/font_gray2"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_patient_list"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                    android:layout_marginBottom="18dp">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/rounded_corner_rectanguler_gray1">-->
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

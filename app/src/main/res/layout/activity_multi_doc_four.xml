@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray1"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:id="@+id/id_root_layout">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/doc1_layout"
+        android:layout_weight="1"
+        android:visibility="gone"
+       >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/doctormale_svg"  />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_hospital1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/doc_img1"
+                    android:layout_alignBottom="@+id/doc_img1"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/id_doc_status1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/doc_img1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="33dp"
+                    android:background="@drawable/rounded_corner_rectanguler"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Ofline" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_doc_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Dr.Jagnath Rao"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/id_doc_que1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="MBBS, MD bvd"
+                    android:textColor="@color/font_gray2"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_upnext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Up Next"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+              />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_up_next_list1"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/doc2_layout"
+        android:layout_weight="1"
+        android:visibility="gone"
+       >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/doctormale_svg" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_hospital2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/doc_img2"
+                    android:layout_alignBottom="@+id/doc_img2"
+                    android:layout_marginEnd="70dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/id_doc_status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/doc_img2"
+                    android:layout_marginEnd="33dp"
+                    android:background="@drawable/rounded_corner_rectanguler"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Ofline" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_doc_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Dr.Jagnath Rao"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/id_doc_que2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="MBBS, MD bvd"
+                    android:textColor="@color/font_gray2"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_upnext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Up Next"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_up_next_list2"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/doc3_layout"
+        android:layout_weight="1"
+        android:visibility="gone"
+      >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/doctormale_svg" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_hospital3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/doc_img3"
+                    android:layout_alignBottom="@+id/doc_img3"
+                    android:layout_marginEnd="70dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/id_doc_status3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/doc_img3"
+                    android:layout_marginEnd="33dp"
+                    android:background="@drawable/rounded_corner_rectanguler"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Ofline" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_doc_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Dr.Jagnath Rao"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/id_doc_que3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="MBBS, MD bvd"
+                    android:textColor="@color/font_gray2"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_upnext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Up Next"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_up_next_list3"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/doc4_layout"
+        android:layout_weight="1"
+       android:visibility="gone"
+      >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray2"
+            android:orientation="vertical"
+           >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/doctormale_svg"  />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doc_hospital4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/doc_img4"
+                    android:layout_alignBottom="@+id/doc_img4"
+                    android:layout_marginEnd="70dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/id_doc_status4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/doc_img4"
+                    android:layout_marginEnd="33dp"
+                    android:background="@drawable/rounded_corner_rectanguler"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Ofline" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_doc_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Dr.Jagnath Rao"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/id_doc_que4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="MBBS, MD bvd"
+                    android:textColor="@color/font_gray2"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_upnext4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Up Next"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_up_next_list4"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

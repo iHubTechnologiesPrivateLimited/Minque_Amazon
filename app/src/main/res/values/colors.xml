@@ -1,0 +1,38 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    // gray theme colors
+    <color name="bg_gray1">#16192a</color>
+    <color name="bg_gray2">#1b2036</color>
+    <color name="bg_gray3">#30354a</color>
+    <color name="font_gray1">#aaaaaa</color>
+    <color name="font_gray2">#888888</color>
+    <color name="font_gray3">#555555</color>
+
+    <color name="font_green">#3ce552</color>
+    <color name="font_orange">#f2a000</color>
+    <color name="bg_blue1">#0179f3</color>
+    <color name="bg_blue2">#005fc1</color>
+
+    <color name="red">#fe4948</color>
+
+    // white theme colors
+    <color name="bg_white_gray2">#f3f6fd</color>
+    <color name="bg_white_gray3">#e7effa</color>
+    <color name="bg_white_blue1">#3b9dff</color>
+    <color name="bg_white_blue2">#307dcd</color>
+    <color name="bg_white_font_gray1">#3d3d3d</color>
+
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#D6D5D5</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="TransparentGrey">#7F000000</color>
+
+
+</resources>
